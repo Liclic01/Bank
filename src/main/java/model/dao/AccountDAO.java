@@ -1,7 +1,8 @@
 package model.dao;
 
-/**
- * Created by Алексей on 13.02.2016.
- */
-public interface AccountDAO {
+import model.Account;
+import org.springframework.data.repository.CrudRepository;
+
+
+public interface AccountDAO extends CrudRepository<Account,Long>{
 }

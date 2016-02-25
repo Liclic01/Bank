@@ -1,7 +1,8 @@
 package model.dao;
 
-/**
- * Created by Алексей on 13.02.2016.
- */
-public interface TransactionDAO {
+import model.Transaction;
+import org.springframework.data.repository.CrudRepository;
+
+
+public interface TransactionDAO extends CrudRepository<Transaction,Long> {
 }

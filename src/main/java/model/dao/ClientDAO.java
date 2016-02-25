@@ -1,7 +1,10 @@
 package model.dao;
 
-/**
- * Created by Алексей on 13.02.2016.
- */
-public interface ClientDAO {
+import java.util.List;
+
+import model.Client;
+
+import org.springframework.data.repository.CrudRepository;
+
+public interface ClientDAO extends CrudRepository<Client, Long>  {	
 }
